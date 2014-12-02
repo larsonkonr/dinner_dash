@@ -1,0 +1,2 @@
+module GregSucksHelper
+end
