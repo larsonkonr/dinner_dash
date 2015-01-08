@@ -9,24 +9,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class= "container-fluid col-xs-12" id="background-fence">
-  </div>
-
-  <div class="head-banner">
-    <a href="/">
-    <div class="row container-fluid">
-
-      <div class="container title-text shadow">
-        <div id="main-title">CROSSROADS LODGE</div>
-        <div id="established">EST. 1812</div>
-      </div>
-
-      <img src="<%= image_path('lodgephotoshopNEW.jpg') %>" alt="lodge photo" class="img-responsive banner-image">
-    </a>
-    </div>
+  <!-- <div class= "container-fluid col-xs-12" id="background-fence"> -->
+  <!-- </div> -->
 
     <%= render :partial => "partials/navbar" %>
+  <div class="head-banner container">
 
+      <div class="container">
+
+        <div class="container title-text shadow">
+          <h1 id="main-title">CROSSROADS LODGE</h1>
+          <h2 id="established">EST. 1812</h2>
+        </div>
+
+        <!-- <img src="<%= image_path('lodgephotoshopNEW.jpg') %>" alt="lodge photo" class="img-responsive banner-image"> -->
+      </div>
   </div>
 
   <% if flash %>

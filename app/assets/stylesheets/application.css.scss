@@ -18,16 +18,20 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 
-body {height: 100%;}
+body {height: 100%;
+      background-color: #F2F2F3;
+      }
 
-.navbar-inverse { background-image: asset-url('black_mamba.png');
-                  // background-color: #E6BC2C;
+.navbar-inverse { background-color: #96B2CD;
+                  background-image: none;
                   border: none;
-                  border-radius: 0px;}
+                  border-radius: 0px;
+                  }
 
 .img-responsive { width: 100% }
 
-div#background-fence {background-image: asset-url('fence-background.jpg');
+div#background-fence {
+                      background-image: asset-url('fence-background.jpg');
                       background-size: contain;
                       position: fixed;
                       opacity: .95;
@@ -36,10 +40,10 @@ div#background-fence {background-image: asset-url('fence-background.jpg');
                       z-index: -1;
                       }
 
-.glyphicon-plus { float:right;
+.glyphicon-plus { float: right;
 }
 
-.glyphicon-minus { float:left;
+.glyphicon-minus { float: left;
 }
 
 .float_left { float:left;
@@ -50,6 +54,11 @@ div#background-fence {background-image: asset-url('fence-background.jpg');
 span.anchor {position:relative;
              display: block;
              }
+
+div.sidenav {
+  top: 30%;
+  position: fixed;
+}
 
 ul.sidenav-list { z-index: 1;
                   position: relative
@@ -91,9 +100,10 @@ h2.menu-category {font-family: 'Stardos Stencil';
 div.thumbnail {height: 350px;
              width: 250px;
              margin: 10px;
-             background-image: asset-url('thumb-background.jpg');
-             background-size: contain;
-             border: none;
+            //  background-image: asset-url('thumb-background.jpg');
+            //  background-size: contain;
+             border-color: black;
+             background-color: #FFF9B5
              }
 
 div.thumbnail * {
@@ -191,6 +201,9 @@ div.category-title {display: block;
 
 
 .head-banner { width: 100%;
+               margin-bottom: 3%;
+               min-height: 25%;
+               overflow: overlay;
                }
 
 .banner-image {position: relative}
@@ -205,13 +218,13 @@ div.category-title {display: block;
               }
 
 #established {
-              color: #E30908;
+              color: black;
               font-size: 275%;
               letter-spacing: 3px;
               }
 
 #main-title {
-             color: #E6BC2C;
+             color: black;
              font-size: 525%;
              letter-spacing: 2px;
              }
