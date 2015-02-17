@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DinnerDash</title>
-  <!-- <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400italic' rel='stylesheet' type='text/css'> -->
-  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Stardos+Stencil:700' %>
+  <title>Crossroads Lodge</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- <div class= "container-fluid col-xs-12" id="background-fence"> -->
-  <!-- </div> -->
 
     <%= render :partial => "partials/navbar" %>
+
   <div class="head-banner container">
-
-      <div class="container">
-
-        <div class="container title-text shadow">
-          <h1 id="main-title">CROSSROADS LODGE</h1>
-          <h2 id="established">EST. 1812</h2>
-        </div>
-
-        <!-- <img src="<%= image_path('lodgephotoshopNEW.jpg') %>" alt="lodge photo" class="img-responsive banner-image"> -->
+      <div class="col-md-3 musket">
+        <%= image_tag 'musket.png' %>
+      </div>
+      <div class="col-md-8 col-md-offset-3 title-text">
+        <h1 id="main-title">Crossroads Lodge</h1>
       </div>
   </div>
 

@@ -19,12 +19,13 @@
 @import "bootstrap/theme";
 
 body {height: 100%;
-      background-color: #F2F2F3;
+      background-color: white;
       }
 
-.navbar-inverse { background-color: #96B2CD;
+.navbar-inverse {
+                  background-color: #DE8D47;
                   background-image: none;
-                  border: none;
+                  border: 1px;
                   border-radius: 0px;
                   }
 
@@ -77,37 +78,33 @@ ul.sidenav.affix-top {
 }
 
 li.menu-link > a {
-              color: #E6BC2C;
-              font-family: 'Stardos Stencil';
+              color: black;
+              font-family: 'Montserrat';
               font-size: 250%;
-              letter-spacing: 2px;
               line-height: 30px;
               font-weight: bold;
               line-height: 30px;
 
               }
-h2.menu-category {font-family: 'Stardos Stencil';
-                  color: #E6BC2C;
+h2.menu-category {
+                  font-family: 'Montserrat', serif;
+                  /* font-style: italic; */
+                  color: black;
                   font-size: 200%;
-                  letter-spacing: 2px;
                   opacity: 0.9;
                   text-align: left;
                   margin-left: 10px;
-                  text-transform: uppercase;
                   margin-top: 5%;
                   }
 
 div.thumbnail {height: 350px;
              width: 250px;
              margin: 10px;
-            //  background-image: asset-url('thumb-background.jpg');
-            //  background-size: contain;
-             border-color: black;
-             background-color: #FFF9B5
+             background-color: black;
              }
 
 div.thumbnail * {
-  font-family: 'Stardos Stencil';
+  font-family: 'Montserrat';
   color: white;
 }
 
@@ -115,9 +112,13 @@ div.thumbnail h3 {
   font-weight: bold;
 }
 
+#description {
+  font-size: 1.2em;
+}
+
 div.thumbnail a {
   color: black;
-  font-family: 'Stardos Stencil';
+  font-family: 'Montserrat';
 }
 
 .shadow {text-shadow:
@@ -140,7 +141,7 @@ a.btn-success {background-color: none;
                background-image: asset-url('cart-background.png');
                border-color: #E30908;
                color: #e0e0e0;
-               font-family: 'Stardos Stencil';
+               font-family: 'Montserrat`';
               }
 
 a.btn-success:hover {
@@ -156,10 +157,10 @@ nav.navbar {
    margin-bottom: 0px;
 }
 
-.nav-link {font-family: 'Stardos Stencil';
+.nav-link {font-family: 'Montserrat';
                      }
 
-.admin-new-stuff-buttons { font-family: 'Stardos Stencil';
+.admin-new-stuff-buttons { font-family: 'Montserrat';
             display: inline;
             padding-top: 5px;
             margin-left: 50%;
@@ -169,11 +170,12 @@ nav.navbar {
 
 .navbar-inverse .navbar-nav > li > a {
   font-size: 130%;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #E6BC2C;
+  /* color: #E6BC2C; */
 }
 
 
@@ -182,7 +184,8 @@ nav.navbar {
             }
 
 
-.edit-form { background-image: asset-url('ricepaper.png');
+.edit-form {
+             background-color: #96B2CD;
              padding: 40px;
              margin-top: 5%;
              margin-bottom: 5%;
@@ -200,33 +203,27 @@ div.category-title {display: block;
                     max-height: 50px}
 
 
-.head-banner { width: 100%;
-               margin-bottom: 3%;
+.head-banner {
                min-height: 25%;
                overflow: overlay;
+               width: 100%;
                }
 
-.banner-image {position: relative}
+.musket {
+  margin-top: 3.5em;
+  }
 
 .title-text { position: absolute;
               z-index: 1;
-              font-family: 'Stardos Stencil';
-              // margin-left: auto;
-              // margin-right: auto;
-              text-align: center;
-              width: 100%
-              }
-
-#established {
-              color: black;
-              font-size: 275%;
-              letter-spacing: 3px;
+              font-family: 'Bree Serif', serif;
+              font-weight: bold;
+              float: left;
+              padding-left: 2em;
               }
 
 #main-title {
              color: black;
              font-size: 525%;
-             letter-spacing: 2px;
              }
 
 
@@ -241,7 +238,8 @@ ul.main-nav {position: inherit}
                padding: 5px 3px
               }
 
-p#price{position:absolute;
+p#price{
+  position:absolute;
   bottom:10px;
   left:10px;
   margin:0;
@@ -256,7 +254,8 @@ p#price{position:absolute;
          border-radius: 10px;
          text-align: center;
          font-size: 115%;
-         letter-spacing: 1px;}
+         letter-spacing: 1px;
+         }
 
 .notice.login-checkout {color: red;
                         }
